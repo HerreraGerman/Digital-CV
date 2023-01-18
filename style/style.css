@@ -1,0 +1,69 @@
+body{
+    background-color: #EEEEEE;
+    color: #222831;
+}
+
+.col{
+    background-color: #00ADB5;
+}
+
+.col-3{
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+.contact{
+    text-align: center;
+}
+
+.contact i{
+    position: relative;
+    margin: 0 5% 10% 5%;
+}
+
+.contact span{
+    position: relative;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+#name_about{
+    background-color: #393E46;
+    color: #00ADB5;
+    text-align: justify;
+}
+
+#name_about h5{
+    color: #EEEEEE;
+    margin-right: 40%;
+}
+
+#profile_picture{
+    width: 150px;
+    border-radius: 50%;
+}
+
+#profile_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile_container img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+[class*="fa-pull-left"] {
+    margin-top: 10px;
+}
+
+[class*="fa-xl"]{
+    cursor: pointer;
+}
