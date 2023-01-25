@@ -1,65 +1,58 @@
 body{
-    background-color: #EEEEEE;
+    background: linear-gradient(
+        to right,
+        #E7FEFF 0%,
+        #E7FEFF 20%,
+        #FFFAFA 20%,
+        #FFFAFA 100%
+      );
     color: #222831;
 }
 
-.col{
-    background-color: #00ADB5;
+body a{
+    text-decoration: none;
+    color: #222831;
+}
+
+.lists p{
+    margin-bottom: 0px;
+}
+
+.lists li{
+    margin-bottom: 16px;
+}
+
+.lists span{
+    float: right;
+    margin-right: 10%;
 }
 
 .col-3{
-    background-color: #222831;
-    color: #EEEEEE;
+    background: #E7FEFF;
+    background: -moz-linear-gradient(left, #E7FEFF 0%, #E7FEFF 95%, #FFFAFA 100%);
+    background: -webkit-linear-gradient(left, #E7FEFF 0%, #E7FEFF 95%, #FFFAFA 100%);
+    background: linear-gradient(to right, #E7FEFF 0%, #E7FEFF 95%, #FFFAFA 100%);
 }
 
-.contact{
-    text-align: center;
-}
-
-.contact i{
-    position: relative;
-    margin: 0 5% 10% 5%;
-}
-
-.contact span{
-    position: relative;
-}
-
-.hide{
-    display: none;
-}
-
-.show{
-    display: block;
-}
-
-.tabs__content{
-    display: none;
-}
-
-#name_about{
-    background-color: #393E46;
+#name-about{
     color: #00ADB5;
     text-align: justify;
 }
 
-#name_about h5{
-    color: #EEEEEE;
+#name-about h5{
+    color: #222831;
     margin-right: 40%;
 }
 
-#profile_picture{
-    width: 150px;
-    border-radius: 50%;
-}
-
-#profile_container{
+#profile-container{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#profile_container img{
+#profile-container img{
+    margin-top: 2%;
+    margin-bottom: 2%;
     width: 150px;
     border-radius: 50%;
 }
@@ -86,21 +79,29 @@ body{
     transition: max-height 0.5s ease-out;
 }
 
-[class*="fa-pull-left"] {
+#contact .acordion-item-header i{
+    margin: 0 5% 7.5% 5%;
+    float: right;
+}
+
+#contact .acordion-item-header::after{
+    content: "";
+}
+
+.acordion [class*="fa-pull-left"] {
     margin-top: -5px;
 }
 
-[class*="fa-xl"]{
-    cursor: pointer;
+[class*="fa-xl"] {
+    margin-top: 1.75%;
 }
-
 
 @media(max-width:1000px) {
     html{
         font-size: 9px;
     }
 
-    #profile_container img{
+    #profile-container img{
         width: 100px;
     }
 }
@@ -109,7 +110,7 @@ body{
     html{
         font-size: 7px;
     }
-    #profile_container img{
+    #profile-container img{
         width: 75px;
     }
 }
@@ -119,7 +120,7 @@ body{
         font-size: 5px;
     } 
 
-    #profile_container img{
+    #profile-container img{
         width: 50px;
     }
 }

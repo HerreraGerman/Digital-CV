@@ -1,3 +1,4 @@
+// This function display information like accordions, its cool
 const acordionItemHeaders = document.querySelectorAll(".acordion-item-header");
 
 acordionItemHeaders.forEach(acordionItemHeader => {
@@ -13,9 +14,10 @@ acordionItemHeaders.forEach(acordionItemHeader => {
   });
 });
 
+// This function match te height of the page with the height of the screen
 $(document).ready(function(){
 
-  var height = $(window).height() - $('#name_about').height();
+  var height = $(window).height() - $('#name-about').height();
 
   $('#content').height(height);
 });
