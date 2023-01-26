@@ -9,10 +9,15 @@ acordionItemHeaders.forEach(acordionItemHeader => {
       acordionItemBody.style.maxHeight = acordionItemBody.scrollHeight + "px";
     }
     else {
-      acordionItemBody.style.maxHeight = 0
+      acordionItemBody.style.maxHeight = 0;
     }
   });
 });
+
+$(acordionItemHeaders).hover(
+  function(){$(this).addClass('fa-fade');},
+  function(){$(this).removeClass('fa-fade');}
+);
 
 // This function match te height of the page with the height of the screen
 $(document).ready(function(){
